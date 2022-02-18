@@ -76,7 +76,9 @@ useSeoMeta({
                 v-else
                 class="font-semibold"
               >
-                <span v-if="project.discount">$ {{ project.price * (1 - (project.discount / 100)).toFixed(1) }} / <span class="text-xs text-muted italic underline">$ {{ project.price }}</span></span>
+                <span v-if="project.discount"> $ {{ (project.price * (1 - project.discount / 100)).toFixed(1) }} /
+                  <span class="text-xs text-muted italic underline">$ {{ project.price }}</span>
+                </span>
                 <span v-else>$ {{ project.price }}</span>
               </span>
             </div>

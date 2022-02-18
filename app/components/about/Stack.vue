@@ -6,9 +6,9 @@ const { data: techs } = await useAsyncData('technologies', () =>
 )
 
 const tabs = [
-  { label: 'Фронтенд', slot: 'frontend', icon: 'i-lucide-monitor' },
-  { label: 'Бэкенд', slot: 'backend', icon: 'i-lucide-server' },
-  { label: 'Инструменты', slot: 'tools', icon: 'i-lucide-wrench' }
+  { label: 'Фронтенд', slot: 'frontend' },
+  { label: 'Бэкенд', slot: 'backend' },
+  { label: 'Инструменты', slot: 'tools' }
 ] satisfies TabsItem[]
 </script>
 

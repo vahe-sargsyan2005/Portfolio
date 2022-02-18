@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { useRoute } from '#imports'
-
 const { t, locale } = useI18n()
 const route = useRoute()
 
@@ -62,7 +58,6 @@ const isActive = (path: string) => {
         </UButton>
       </NuxtLink>
 
-      <!-- Переключатель темы -->
       <div class="flex items-center">
         <CommonColorModeButton />
       </div>

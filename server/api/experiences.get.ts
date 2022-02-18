@@ -4,9 +4,9 @@ export default defineEventHandler(() => {
       {
         year: '2024 — сейчас',
         company: 'Nsoft',
-        title: 'Middle Full-Stack Developer',
+        title: 'Middle+ Full-Stack Developer',
         period: 'Октябрь 2024 — по настоящее время',
-        description: 'Разрабатываю архитектуру микросервисов, фронтенд, backend и админ-панель. Обеспечиваю отказоустойчивость и масштабируемость.'
+        description: 'Разрабатываю архитектуру микросервисов, фронтенд, backend. Обеспечиваю отказоустойчивость и масштабируемость.'
       },
       {
         year: '2023 — 2024',
@@ -32,7 +32,7 @@ export default defineEventHandler(() => {
         title: 'Middle Full-Stack Developer',
         period: 'October 2024 — Present',
         description:
-          'Developing microservice architecture, frontend, backend, and admin panel. Ensuring fault tolerance and scalability.'
+          'Developing microservice architecture, frontend, backend. Ensuring fault tolerance and scalability.'
       },
       {
         year: '2023 — 2024',
@@ -58,7 +58,7 @@ export default defineEventHandler(() => {
         title: 'Middle Full-Stack ծրագրավորող',
         period: 'Հոկտեմբեր 2024 — Հիմա',
         description:
-          'Աշխատում եմ միկրոսերվիսների ճարտարապետության, frontend, backend և ադմին պանելների վրա։ Ապահովում եմ կայունություն և մասշտաբելիություն։'
+          'Աշխատում եմ միկրոսերվիսների ճարտարապետության, frontend, backend։ Ապահովում եմ կայունություն և մասշտաբելիություն։'
       },
       {
         year: '2023 — 2024',

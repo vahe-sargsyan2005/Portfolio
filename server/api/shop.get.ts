@@ -60,7 +60,7 @@ export default defineEventHandler((): TranslatedShopItems => {
         repository: 'https://github.com/Zone-13/rus-military-badges',
         price: 0,
         discount: 100
-      },
+      }
     ]
   }
 })
