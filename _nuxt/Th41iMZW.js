@@ -1,1 +1,0 @@
-import{aH as s,i as _,o as c,g as e,f as r,h as d,aS as l,z as p,aT as m,az as f}from"./C5kUfS7n.js";const i={},u={class:"py-10"};function x(t,h){const o=l,a=m,n=f;return c(),_("div",null,[e(n,{class:"sm:border-x border-default max-w-4xl sm:pt-10 relative"},{default:r(()=>[e(o),d("div",u,[p(t.$slots,"default")]),e(a)]),_:3})])}const B=s(i,[["render",x]]);export{B as default};
