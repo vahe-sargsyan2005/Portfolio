@@ -13,8 +13,5 @@ const { t } = useI18n()
     <p class="text-muted text-sm">
       {{ t('activity.description1') }}
     </p>
-    <p class="text-muted text-sm mt-2">
-      {{ t('activity.description2') }}
-    </p>
   </div>
 </template>

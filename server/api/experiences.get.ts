@@ -3,19 +3,10 @@ export default defineEventHandler(() => {
     ru: [
       {
         year: '2024 — сейчас',
-        company: 'Anidzen',
-        title: 'CEO и Full-Stack Developer',
-        period: 'Ноябрь 2024 — по настоящее время',
-        description:
-          'В свободное время в рамках проекта Anidzen я разрабатываю быстрые и высокоэффективные приложения: sora.ql, ota-ku, aira, и микросервисы на Laravel. Проектирую REST и GraphQL API.'
-      },
-      {
-        year: '2024 — 2025',
-        company: 'Проект Age of Astir (Nsoft)',
+        company: 'Nsoft',
         title: 'Middle Full-Stack Developer',
-        period: 'Октябрь 2024 — Июнь 2025',
-        description:
-          'Разработал архитектуру микросервисов, создал фронтенд и backend, админ-панель. Обеспечил отказоустойчивость и масштабируемость.'
+        period: 'Октябрь 2024 — по настоящее время',
+        description: 'Разрабатываю архитектуру микросервисов, фронтенд, backend и админ-панель. Обеспечиваю отказоустойчивость и масштабируемость.'
       },
       {
         year: '2023 — 2024',
@@ -23,7 +14,7 @@ export default defineEventHandler(() => {
         title: 'Middle Full-Stack Developer',
         period: 'Февраль 2023 — Сентябрь 2024',
         description:
-          'Разрабатывал внутренние системы: API, админ-панели, интеграции с внешними сервисами. Работал с платёжными шлюзами, Интегрировал платёжные системы (Stripe, BTC, LTC). Отвечал за стабильную интеграцию frontend и backend.'
+          'Разрабатывал внутренние системы: API, админ-панели, интеграции с внешними сервисами. Работал с платёжными шлюзами, интегрировал Stripe, BTC, LTC. Отвечал за стабильную интеграцию frontend и backend.'
       },
       {
         year: '2022 — 2023',
@@ -36,20 +27,12 @@ export default defineEventHandler(() => {
     ],
     en: [
       {
-        year: '2024 — present',
-        company: 'Anidzen',
-        title: 'CEO and Full-Stack engineer',
-        period: 'November 2024 — present',
-        description:
-          'In my spare time, I develop fast and high-performance apps as part of Anidzen: sora.ql, ota-ku, aira, and microservices using Laravel. I design REST and GraphQL APIs.'
-      },
-      {
-        year: '2024 — 2025',
-        company: 'Age of Astir Project (Nsoft)',
+        year: '2024 — Present',
+        company: 'Nsoft',
         title: 'Middle Full-Stack Developer',
-        period: 'October 2024 — June 2025',
+        period: 'October 2024 — Present',
         description:
-          'Developed microservice architecture, created frontend, backend, and admin panel. Ensured fault tolerance and scalability.'
+          'Developing microservice architecture, frontend, backend, and admin panel. Ensuring fault tolerance and scalability.'
       },
       {
         year: '2023 — 2024',
@@ -57,7 +40,7 @@ export default defineEventHandler(() => {
         title: 'Middle Full-Stack Developer',
         period: 'February 2023 — September 2024',
         description:
-          'Developed internal systems: APIs, admin panels, integrations with third-party services. Worked with payment gateways, integrated Stripe, BTC, LTC. Responsible for smooth frontend-backend integration.'
+          'Developed internal systems: APIs, admin panels, and integrations with third-party services. Worked with payment gateways and integrated Stripe, BTC, LTC. Responsible for smooth frontend-backend integration.'
       },
       {
         year: '2022 — 2023',
@@ -65,25 +48,17 @@ export default defineEventHandler(() => {
         title: 'Full-Stack Developer',
         period: 'January 2022 — February 2023',
         description:
-          'Built MVPs from scratch for startups: from design to production. Handled CI/CD, deployment, UX, and support. Communicated directly with clients and improved business processes through tech solutions.'
+          'Built MVPs from scratch for startups: from design to production. Managed CI/CD, deployment, UX, and support. Communicated directly with clients and improved business processes through tech solutions.'
       }
     ],
     hy: [
       {
-        year: '2024 — ներկա',
-        company: 'Anidzen',
-        title: 'CEO և Full-Stack ծրագրավորող',
-        period: 'Նոյեմբեր 2024 — մինչ այժմ',
-        description:
-          'Ազատ ժամանակ Anidzen նախագծում ստեղծում եմ արագ և բարձր արդյունավետությամբ հավելվածներ՝ sora.ql, ota-ku, aira և Laravel-ով միկրոսերվիսներ։ Նախագծում եմ REST և GraphQL API-ներ։'
-      },
-      {
-        year: '2024 — 2025',
-        company: 'Age of Astir նախագիծ (Nsoft)',
+        year: '2024 — Հիմա',
+        company: 'Nsoft',
         title: 'Middle Full-Stack ծրագրավորող',
-        period: 'Հոկտեմբեր 2024 — Հունիս 2025',
+        period: 'Հոկտեմբեր 2024 — Հիմա',
         description:
-          'Մշակել եմ միկրոսերվիսների ճարտարապետություն, frontend, backend և ադմին պանել։ Ապահովել եմ կայունություն և մասշտաբելիություն։'
+          'Աշխատում եմ միկրոսերվիսների ճարտարապետության, frontend, backend և ադմին պանելների վրա։ Ապահովում եմ կայունություն և մասշտաբելիություն։'
       },
       {
         year: '2023 — 2024',
@@ -91,7 +66,7 @@ export default defineEventHandler(() => {
         title: 'Middle Full-Stack ծրագրավորող',
         period: 'Փետրվար 2023 — Սեպտեմբեր 2024',
         description:
-          'Մշակել եմ ներքին համակարգեր՝ API-ներ, ադմին պանելի ինտեգրացիաներ այլ ծառայությունների հետ։ Աշխատել եմ վճարային համակարգերի հետ՝ Stripe, BTC, LTC։ Պատասխանատու էի frontend-ի և backend-ի սահուն ինտեգրման համար։'
+          'Աշխատել եմ ներքին համակարգերի վրա՝ API-ներ, ադմին պանելների ինտեգրացիաներ այլ ծառայությունների հետ։ Աշխատել եմ վճարային համակարգերի հետ՝ Stripe, BTC, LTC։ Պատասխանատու եմ frontend-ի և backend-ի սահուն ինտեգրման համար։'
       },
       {
         year: '2022 — 2023',

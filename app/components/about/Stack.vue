@@ -25,12 +25,12 @@ const tabs = [
           <div
             v-for="tech in techs?.frontend || []"
             :key="tech.name"
-            class="flex flex-col items-center gap-2 text-center"
+            class="flex flex-col items-center gap-2 text-center pointer-events-none select-none"
           >
             <img
               :src="tech.icon"
               :alt="tech.name"
-              class="w-[50px] h-[50px]"
+              class="w-[50px] h-[50px] pointer-events-none select-none"
             >
             <span class="text-xs text-muted">{{ tech.name }}</span>
           </div>

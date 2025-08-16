@@ -144,7 +144,7 @@ const educations = computed<Education[]>(() => {
         <div class="w-full flex">
           <div class="space-y-4">
             <div>
-              <h4 class="font-semibold text-xl">
+              <h4 class="font-semibold text-xl mb-1">
                 {{ t('experience.title') }} — {{ experienceString }}
               </h4>
               <h6 class="text-neutral-700 text-sm">
@@ -175,17 +175,17 @@ const educations = computed<Education[]>(() => {
             </ul>
           </div>
         </div>
-        <div class="w-1/3 flex flex-col space-y-4">
-          <h3 class="font-semibold text-xl">
+        <div class="w-1/3 flex flex-col">
+          <h3 class="font-semibold text-xl mb-1">
             {{ $t('resume.skills') }}
           </h3>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex flex-wrap gap-1.5">
             <div
               v-for="tech in combinedTechs || []"
               :key="tech.name"
-              class="border border-neutral-700 px-2 py-0.5 rounded-full text-nowrap text-xs"
+              class="border border-neutral-400 px-1 py-0.1 rounded-full text-nowrap text-xs"
             >
-              <span class="text-xs text-neutral-700">{{ tech.name }}</span>
+              <span class="text-[10px] text-black">{{ tech.name }}</span>
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@ const educations = computed<Education[]>(() => {
           <div
             v-for="(item, index) in educations"
             :key="'edu-' + index"
-            class="border-l-2 pl-3 border-neutral-700"
+            class="border-l-3 pl-4 border-neutral-200"
           >
             <h5 class="font-semibold text-base">
               {{ item.title }}
@@ -225,9 +225,6 @@ const educations = computed<Education[]>(() => {
           <div class="space-y-2 text-neutral-700 text-sm">
             <p>
               {{ t('activity.description1') }}
-            </p>
-            <p>
-              {{ t('activity.description2') }}
             </p>
           </div>
         </div>

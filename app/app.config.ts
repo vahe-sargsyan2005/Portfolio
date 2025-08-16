@@ -7,9 +7,8 @@ export default defineAppConfig({
     email: 'w33bv.gl@gmail.com',
     phone: '+374(94) 161-331',
     address: 'Armenia, Ararat Vedi.vosketap i.hakobyan 28',
-    projectRepository: 'https://github.com/w33bvGL/w33bvGL-porfolio',
     telegram: '@Vahesargsyan2005',
-    available: true,
+    available: false,
     birthday: '2005-03-30',
     experienceStartDate: '2022-01-01'
   },
@@ -25,7 +24,7 @@ export default defineAppConfig({
     links: [
       {
         'icon': 'i-simple-icons-github',
-        'to': 'https://github.com/w33bvGL',
+        'to': 'https://github.com/vahe-sargsyan2005',
         'target': '_blank',
         'aria-label': 'Vahe on GitHub'
       },
@@ -46,6 +45,12 @@ export default defineAppConfig({
         'to': 'mailto:w33bv.gl@gmail.com',
         'target': '_blank',
         'aria-label': 'Send email to Vahe'
+      },
+      {
+        'icon': 'i-simple-icons-modrinth',
+        'to': 'https://modrinth.com/user/VaheSargsyan',
+        'target': '_blank',
+        'aria-label': 'Vahe on Modrinth'
       }
     ]
   }

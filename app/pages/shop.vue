@@ -49,7 +49,7 @@ useSeoMeta({
         >
           {{ $t('shop.discount') }} / {{ project.discount }}%
         </div>
-        <div class="w-full md:w-1/3 aspect-video border border-muted mb-3 rounded-lg bg-muted/80 overflow-hidden">
+        <div class="w-full md:w-1/3 aspect-video border border-muted rounded-lg bg-muted/80 overflow-hidden">
           <NuxtImg
             :src="project.image"
             width="270"
@@ -59,18 +59,18 @@ useSeoMeta({
             :placeholder="img(project.image, { h: 10, f: 'png', blur: 0.3, q: 50 })"
           />
         </div>
-        <div class="w-full md:w-1/2">
+        <div class="w-full md:w-1/2 flex justify-center flex-col">
           <h3 class="text-xl font-semibold mb-1">
             {{ project.name }}
           </h3>
-          <p class="text-muted text-sm mb-1">
+          <p class="text-muted text-sm">
             {{ project.description }}
           </p>
           <div class="flex items-center gap-4 mt-3">
             <div>
               <span
                 v-if="project.price === 0"
-                class="text-success font-semibold italic"
+                class="text-success font-semibold"
               >{{ t('shop.free') }}</span>
               <span
                 v-else
@@ -85,6 +85,7 @@ useSeoMeta({
               :href="project.url"
               target="_blank"
               color="neutral"
+              icon="i-lucide-link"
             >
               {{ t('shop.watch') }}
             </UButton>

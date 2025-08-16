@@ -57,7 +57,7 @@ useSeoMeta({
         <h3 class="text-xl font-semibold mb-1">
           {{ project.name }}
         </h3>
-        <p class="text-muted text-sm mb-1">
+        <p class="text-muted text-sm mb-1 line-clamp-3">
           {{ project.description }}
         </p>
         <ULink

@@ -50,7 +50,7 @@ const startViewTransition = (event: MouseEvent) => {
       :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
       color="neutral"
       size="sm"
-      class="rounded-full"
+      class="rounded-full cursor-pointer"
       @click="startViewTransition"
     />
     <template #fallback>

@@ -52,7 +52,7 @@ const isActive = (path: string) => {
         <UButton
           :variant="isActive(link.to) ? 'solid' : 'link'"
           color="neutral"
-          class="flex items-center gap-2 text-sm px-3 py-1.5 rounded-full"
+          class="flex items-center gap-2 text-sm px-3 py-1.5 rounded-full cursor-pointer"
         >
           <UIcon
             :name="link.icon"

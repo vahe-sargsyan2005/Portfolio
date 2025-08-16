@@ -37,9 +37,9 @@ useSeoMeta({
       :height="2"
     />
     <NuxtLayout>
-      <UMain class="relative">
+      <main class="relative">
         <NuxtPage />
-      </UMain>
+      </main>
     </NuxtLayout>
   </UApp>
 

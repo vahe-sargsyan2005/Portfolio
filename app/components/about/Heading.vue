@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const { global } = useAppConfig()
+const { global, footer } = useAppConfig()
 const img = useImage()
 const age = useAge()
 </script>
 
 <template>
-  <section class="mb-10 flex gap-5 flex-col md:flex-row">
+  <section class="mb-10 flex gap-5 flex-col md:flex-row items-center">
     <div class="flex-1">
       <h1 class="text-2xl font-bold tracking-tight">
         {{ $t('about.title') }}
@@ -13,6 +13,13 @@ const age = useAge()
       <p class="text-muted text-base">
         {{ $t('about.intro', { age }) }}
       </p>
+      <div class="mt-2 flex gap-2">
+        <UButton
+          v-for="(link, index) of footer?.links"
+          :key="index"
+          v-bind="{ color: 'neutral', variant: 'soft', ...link }"
+        />
+      </div>
     </div>
     <div class="hidden md:flex justify-center items-start">
       <NuxtImg

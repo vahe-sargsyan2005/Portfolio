@@ -20,13 +20,15 @@ useSeoMeta({
     <AboutHeading />
     <AboutStack />
 
-    <section class="mb-10 grid md:grid-cols-2 md:gap-5">
-      <div class="mb-10 md:mb-0">
+    <section class="grid md:grid-cols-2 md:gap-5">
+      <div>
         <About />
       </div>
       <div>
         <AboutAchievements />
       </div>
     </section>
+
+    <ProjectsCta />
   </UPage>
 </template>

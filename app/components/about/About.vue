@@ -1,18 +1,44 @@
 <script setup lang="ts">
+import type { About, TranslatedAbout } from '~/types/about'
+
+const { locale } = useI18n()
+
+const { data: aboutBylang } = await useAsyncData<TranslatedAbout>('about', () =>
+  $fetch('/api/about')
+)
+
+const about = computed<About[]>(() => {
+  if (!aboutBylang.value) return []
+  if (locale.value in aboutBylang.value) {
+    return aboutBylang.value[locale.value as keyof TranslatedAbout]
+  }
+  return []
+})
 </script>
 
 <template>
   <div>
-    <p class="text-base text-muted leading-relaxed">
-      {{ $t('about.stack') }}
-      <br><br>
-      {{ $t('about.business') }}
-      <br><br>
-      {{ $t('about.projects') }}
-      <br><br>
-      {{ $t('about.approach') }}
-      <br><br>
-      {{ $t('about.opensource') }}
-    </p>
+    <div class="mb-5">
+      <h3 class="text-2xl font-bold tracking-tight">
+        {{ $t('about.title') }}
+      </h3>
+      <p class="text-muted text-base">
+        {{ $t('about.description') }}
+      </p>
+    </div>
+    <div class="space-y-4">
+      <div
+        v-for="(item, idx) in about"
+        :key="idx"
+        class="border-l-3 pl-4 border-muted"
+      >
+        <h3 class="font-semibold text-base">
+          {{ item.title }}
+        </h3>
+        <p class="text-base text-muted text-sm">
+          {{ item.content }}
+        </p>
+      </div>
+    </div>
   </div>
 </template>
