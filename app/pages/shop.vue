@@ -63,7 +63,7 @@ useSeoMeta({
           <h3 class="text-xl font-semibold mb-1">
             {{ project.name }}
           </h3>
-          <p class="text-muted text-sm">
+          <p class="text-muted text-sm line-clamp-3">
             {{ project.description }}
           </p>
           <div class="flex items-center gap-4 mt-3">
