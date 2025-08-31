@@ -4,7 +4,9 @@ import { en, ru, hy } from '@nuxt/ui/locale'
 const { locale } = useI18n()
 const route = useRoute()
 
-const onLocaleChange = (newLocale: string) => {
+const onLocaleChange = (newLocale: string | undefined) => {
+  if (!newLocale) return
+
   locale.value = newLocale as 'en' | 'ru' | 'hy'
 
   const newPrefix = newLocale !== 'en' ? `/${newLocale}` : ''

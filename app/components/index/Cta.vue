@@ -11,9 +11,10 @@ const resumeOptions = computed(() => [
   { label: t('cta.resumeRu'), value: 'ru' }
 ])
 
-function downloadResume(lang: 'en' | 'hy' | 'ru'): void {
-  const isStaticHosting = config.public.appEnv === 'production'
+function downloadResume(lang: string): void {
+  if (!['en', 'hy', 'ru'].includes(lang)) return
 
+  const isStaticHosting = config.public.appEnv === 'production'
   const url = isStaticHosting
     ? `/resume/resume-${lang}.pdf`
     : `/api/resume-pdf?lang=${lang}`
