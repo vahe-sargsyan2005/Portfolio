@@ -1,29 +1,38 @@
-# Начало и конец периода
 $startDate = Get-Date "2020-01-01"
 $endDate   = Get-Date "2025-08-31"
 
 $currentDate = $startDate
+$rand = New-Object System.Random
 
 while ($currentDate -le $endDate) {
-    # День недели (1 = воскресенье, 7 = суббота)
-    $dayOfWeek = [int]$currentDate.DayOfWeek
 
-    # Если будний день (понедельник=1 .. пятница=5)
-    if ($dayOfWeek -ge 1 -and $dayOfWeek -le 5) {
-        $dateStr = $currentDate.ToString("ddd MMM dd HH:mm:ss yyyy K")
+    $doCommitToday = $rand.Next(0, 100) -lt 80
+    if ($doCommitToday) {
 
-        git commit --allow-empty -m "Commit for $($currentDate.ToString("yyyy-MM-dd"))" `
-            --date "$dateStr" `
-            --author="YourName <your@email.com>" `
-            --no-gpg-sign
+        $commitsToday = $rand.Next(1, 31)
 
-        # Чтобы автор и коммиттер совпадали
-        $env:GIT_AUTHOR_DATE    = $dateStr
-        $env:GIT_COMMITTER_DATE = $dateStr
+        for ($i = 0; $i -lt $commitsToday; $i++) {
+
+            $hour = $rand.Next(0, 24)
+            $minute = $rand.Next(0, 60)
+            $second = $rand.Next(0, 60)
+
+            $dateTime = Get-Date -Year $currentDate.Year -Month $currentDate.Month -Day $currentDate.Day -Hour $hour -Minute $minute -Second $second
+            $dateStr = $dateTime.ToString("ddd MMM dd HH:mm:ss yyyy K", [System.Globalization.CultureInfo]::InvariantCulture)
+
+            $env:GIT_AUTHOR_NAME = "Vahe"
+            $env:GIT_AUTHOR_EMAIL = "w33bv.gl@gmail.com"
+            $env:GIT_COMMITTER_NAME = "Vahe"
+            $env:GIT_COMMITTER_EMAIL = "w33bv.gl@gmail.com"
+            $env:GIT_AUTHOR_DATE = $dateStr
+            $env:GIT_COMMITTER_DATE = $dateStr
+
+            git commit --allow-empty -m "Commit for $($currentDate.ToString("yyyy-MM-dd")) #$i" --date "$dateStr"
+        }
     }
 
-    # Следующий день
     $currentDate = $currentDate.AddDays(1)
 }
 
-git push
+# Пушим все изменения
+git push origin main
