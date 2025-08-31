@@ -25,6 +25,7 @@ export default defineEventHandler(() => {
       { name: 'Livewire', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/livewire/livewire-original.svg' },
       { name: 'Moonshine', icon: 'https://demo.moonshine-laravel.com/vendor/moonshine/logo-small.svg' },
       { name: 'Nova', icon: '/tech/nova.svg' },
+      { name: 'Filament', icon: '/tech/filament.svg' },
       { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
       { name: 'PostgresSQL', icon: '/tech/postgresql.svg' },
       { name: 'Kafka', icon: '/tech/kafka.svg' },
@@ -32,7 +33,8 @@ export default defineEventHandler(() => {
       { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
       { name: 'Cassandra', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg' },
       { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
-      { name: 'Memcached', icon: 'https://www.vectorlogo.zone/logos/memcached/memcached-icon.svg' }
+      { name: 'Memcached', icon: 'https://www.vectorlogo.zone/logos/memcached/memcached-icon.svg' },
+      { name: 'Elasticsearch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg'}
     ],
     tools: [
       { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
