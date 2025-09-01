@@ -1,7 +1,6 @@
 export default defineEventHandler(() => {
   return {
     en: [
-      { name: 'Age of Astir', image: '/projects/age-of-astir.png', description: 'An MMORPG server inspired by Pandora Saga featuring three nations, large-scale PvP battles, dungeons, bosses, and a revamped progression system.', url: 'https://ageofastir.com' },
       { name: 'Cyberhack pro', image: '/projects/cyberhack-pro.png', description: 'A huge selection of cheats for your favorite games Our products are the most secure solutions for those who want to play their favorite game with cheats', url: 'https://cyberhack.pro' },
       {
         name: 'Rus military badges',
@@ -20,7 +19,6 @@ export default defineEventHandler(() => {
       { name: 'UDP Logistics', image: '/projects/udp-logistics.png', description: 'UDP Logistics specializes in shipping parcels and cargo between Uzbekistan and Europe.' }
     ],
     hy: [
-      { name: 'Age of Astir', image: '/projects/age-of-astir.png', description: 'MMORPG սերվեր, որն ներշնչված է Pandora Saga-ից՝ առաջարկելով երեք ազգեր, մեծ PvP ճակատամարտեր, խուզարկություններ, բոսսեր և վերանորոգված պրոգրեսի համակարգ:', url: 'https://ageofastir.com' },
       { name: 'Cyberhack pro', image: '/projects/cyberhack-pro.png', description: 'Շատ մեծ ընտրություն խաբեությունների՝ ձեր սիրած խաղերի համար: Մեր արտադրանքները ամենաանվտանգ լուծումներն են նրանց համար, ովքեր ցանկանում են խաղալ իրենց սիրած խաղը խաբեություններով:', url: 'https://cyberhack.pro' },
       {
         name: 'Ռուսական բանակի ուսադիրներ',
@@ -39,7 +37,6 @@ export default defineEventHandler(() => {
       { name: 'UDP Logistics', image: '/projects/udp-logistics.png', description: 'UDP Logistics մասնագիտացած է Ուզբեկստանից Եվրոպա փաթեթների և բեռների առաքման մեջ:' }
     ],
     ru: [
-      { name: 'Age of Astir', image: '/projects/age-of-astir.png', description: 'MMORPG сервер, вдохновлённый Pandora Saga, с тремя нациями, масштабными PvP битвами, подземельями, боссами и обновленной системой прогрессии.', url: 'https://ageofastir.com' },
       { name: 'Cyberhack pro', image: '/projects/cyberhack-pro.png', description: 'Огромный выбор читов для ваших любимых игр. Наши продукты — самые безопасные решения для тех, кто хочет играть с читами.', url: 'https://cyberhack.pro' },
       {
         name: 'Русские армейские погоны',

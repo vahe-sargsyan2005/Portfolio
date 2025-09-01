@@ -4,7 +4,7 @@ export default defineEventHandler(() => {
       {
         year: '2024 — сейчас',
         company: 'Nsoft',
-        title: 'Middle+ Full-Stack Developer',
+        title: 'Middle Full-Stack Developer',
         period: 'Октябрь 2024 — по настоящее время',
         description: 'Разрабатываю архитектуру микросервисов, фронтенд, backend. Обеспечиваю отказоустойчивость и масштабируемость.'
       },
