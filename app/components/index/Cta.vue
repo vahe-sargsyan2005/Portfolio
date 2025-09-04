@@ -30,7 +30,6 @@ function downloadResume(lang: string): void {
 
 <template>
   <UPageCTA
-    :description="t('cta.description')"
     variant="naked"
     :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'p-0 sm:p-5 md:py-0 lg:py-0 px-0 sm:px-5 mb-10' }"
   >
@@ -52,6 +51,9 @@ function downloadResume(lang: string): void {
         <h2 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted text-center">
           {{ t('cta.title') }}
         </h2>
+        <h4 class="font-light sm:text-lg tracking-tight text-center text-muted mt-3">
+            {{ t('cta.description') }}
+        </h4>
       </div>
     </template>
 
