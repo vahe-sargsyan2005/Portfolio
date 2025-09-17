@@ -14,8 +14,7 @@
     "gh-build": "dotenv -e .env.prod -- npx nuxt build --preset github_pages && npm run generate-resumes",
     "gh-publish": "npx gh-pages --dotfiles -d .output/public",
     "prod": "npm run gh-build && npm run gh-publish",
-    "typecheck": "nuxt typecheck",
-    "rewrite": "node ui-pro-plugin/index.js"
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.44",
