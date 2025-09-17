@@ -224,7 +224,10 @@ const educations = computed<Education[]>(() => {
           </div>
           <div class="space-y-2 text-neutral-700 text-sm">
             <p>
-              {{ t('activity.description1') }}
+              {{ $t('activity.opensource') }}
+            </p>
+            <p>
+              {{ $t('activity.personal') }}
             </p>
           </div>
         </div>
