@@ -33,10 +33,10 @@
     "description": "My education and internships"
   },
   "activity": {
-    "title": "Side Activities",
-    "description": "My projects and initiatives outside of work.",
-    "description1": "Contributor to open-source projects like Nuxt UI, LibreTranslate, and others.",
-    "description2": "As part of the Anidzen project, I develop fast and high-performance apps: sora.ql, ota-ku, aira, and Laravel-based microservices."
+    "title": "Extracurricular Activities",
+    "description": "My projects and initiatives outside of my main work.",
+    "opensource": "I participate in the development of the open-source ecosystem — from Nuxt UI to LibreTranslate and other projects.",
+    "personal": "In my free time, I work on various initiatives and collaborative projects: OTA-KU, Currenzy, GeoFence, Hentai-Voice, and others."
   },
   "achievements": {
     "title": "My Achievements",
