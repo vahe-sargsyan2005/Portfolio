@@ -52,7 +52,7 @@ function downloadResume(lang: string): void {
           {{ t('cta.title') }}
         </h2>
         <h4 class="font-light sm:text-lg tracking-tight text-center text-muted mt-3">
-            {{ t('cta.description') }}
+          {{ t('cta.description') }}
         </h4>
       </div>
     </template>

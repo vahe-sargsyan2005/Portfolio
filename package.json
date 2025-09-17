@@ -20,16 +20,14 @@
   "dependencies": {
     "@iconify-json/lucide": "^1.2.44",
     "@iconify-json/simple-icons": "^1.2.35",
-    "@nuxt/content": "^3.5.1",
     "@nuxt/image": "^1.10.0",
-    "@nuxt/ui-pro": "3.1.1",
+    "@nuxt/ui": "^4.0.0-alpha.1",
     "@vueuse/nuxt": "^13.2.0",
     "fs-extra": "^11.3.0",
     "motion-v": "^1.1.1",
-    "nuxt": "^3.17.5",
+    "nuxt": "^4.1.2",
     "nuxt-gtag": "^3.0.3",
     "nuxt-og-image": "^5.1.4",
-    "nuxt-ui-pro-plugin": "file:ui-pro-plugin",
     "puppeteer": "^24.10.1",
     "tree-kill": "^1.2.2",
     "undici": "^7.10.0"

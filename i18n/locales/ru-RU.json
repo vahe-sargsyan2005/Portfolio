@@ -33,8 +33,9 @@
   },
   "activity": {
     "title": "Внерабочая деятельность",
-    "description": "Мои проекты и инициативы вне работы.",
-    "description1": "Участник open-source проектов, таких как Nuxt UI, LibreTranslate и других."
+    "description": "Мои проекты и инициативы вне основной работы.",
+    "opensource": "Принимаю участие в развитии open-source экосистемы — от Nuxt UI до LibreTranslate и других проектов.",
+    "personal": "В свободное время работаю над различными инициативами и совместными проектами: OTA-KU, Currenzy, GeoFence, Hentai-Voice и другими."
   },
   "achievements": {
     "title": "Мои достижения",

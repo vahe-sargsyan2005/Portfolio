@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/ui-pro',
+    '@nuxt/ui',
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
@@ -26,10 +26,6 @@ export default defineNuxtConfig({
     public: {
       appEnv: process.env.APP_ENV || 'development'
     }
-  },
-
-  future: {
-    compatibilityVersion: 4
   },
 
   compatibilityDate: '2024-11-01',

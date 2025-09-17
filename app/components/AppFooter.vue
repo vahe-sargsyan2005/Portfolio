@@ -11,14 +11,17 @@ const { footer } = useAppConfig()
     </template>
 
     <template #right>
-      <template v-if="footer?.links">
+      <div
+        v-if="footer?.links"
+        class="flex items-center gap-1"
+      >
         <UButton
           v-for="(link, index) of footer?.links"
           :key="index"
-          class="hidden md:block"
+          class="hidden md:flex items-center"
           v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
         />
-      </template>
+      </div>
 
       <div>
         <CommonLanguageSwitcher />

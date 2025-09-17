@@ -53,6 +53,12 @@ export default defineAppConfig({
         'aria-label': 'Send email to Vahe'
       },
       {
+        'icon': 'i-simple-icons-npm',
+        'to': 'https://www.npmjs.com/~vahesargsyan',
+        'target': '_blank',
+        'aria-label': 'Vahe on NPM'
+      },
+      {
         'icon': 'i-simple-icons-modrinth',
         'to': 'https://modrinth.com/user/VaheSargsyan',
         'target': '_blank',
