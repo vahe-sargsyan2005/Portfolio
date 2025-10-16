@@ -1,0 +1,1 @@
+import{d as n,i as t,o as s,h as i,k as a,t as o}from"#entry";const c={class:"text-xl font-semibold"},r={key:0,class:"text-muted"},_=n({__name:"Heading",props:{title:{},description:{}},setup(p){return(e,d)=>(s(),t("div",null,[i("h4",c,o(e.title),1),e.description?(s(),t("p",r,o(e.description),1)):a("",!0)]))}}),m=Object.assign(_,{__name:"UiHeading"});export{m as _};
