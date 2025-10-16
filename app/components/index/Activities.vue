@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-4">
-    <UiPageHeader
+    <UiHeading
       :title="$t('activity.title')"
       :description="$t('activity.description')"
     />
@@ -12,3 +12,5 @@
     </p>
   </div>
 </template>
+<script setup lang="ts">
+</script>

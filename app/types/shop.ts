@@ -5,7 +5,8 @@ export type ShopItem = {
   price: number
   discount?: number
   url?: string
-  repository: string
+  github?: string
+  download?: string
 }
 
 export interface TranslatedShopItems {

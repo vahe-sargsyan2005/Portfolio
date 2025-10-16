@@ -19,12 +19,7 @@ const about = computed<About[]>(() => {
 <template>
   <div>
     <div class="mb-5">
-      <h3 class="text-2xl font-bold tracking-tight">
-        {{ $t('about.title') }}
-      </h3>
-      <p class="text-muted text-base">
-        {{ $t('about.description') }}
-      </p>
+      <UiHeading :title="$t('about.title')" :description="$t('about.description')"/>
     </div>
     <div class="space-y-4">
       <div

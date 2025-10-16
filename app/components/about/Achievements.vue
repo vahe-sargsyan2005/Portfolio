@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Achievement, TranslatedAchievements } from '~/types/achievements'
 
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 
 const { data: achievementsByLang } = await useAsyncData<TranslatedAchievements>('achievement', () =>
   $fetch('/api/achievements')
@@ -18,9 +18,9 @@ const achievements = computed<Achievement[]>(() => {
 
 <template>
   <section class="mb-10 space-y-5">
-    <UiPageHeader
-      :title="t('achievements.title')"
-      :description="t('achievements.description')"
+    <UiHeading
+      :title="$t('achievements.title')"
+      :description="$t('achievements.description')"
     />
     <div class="space-y-3 border-l-3 border-muted pl-4 relative">
       <div

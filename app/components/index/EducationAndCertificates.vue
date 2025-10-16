@@ -20,7 +20,7 @@ const educations = computed<Education[]>(() => {
 
 <template>
   <div class="space-y-5">
-    <UiPageHeader
+    <UiHeading
       :title="t('education.title')"
       :description="t('education.description')"
     />

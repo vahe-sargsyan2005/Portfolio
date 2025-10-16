@@ -1,6 +1,12 @@
 export default defineEventHandler(() => {
   return {
     en: [
+      {
+        name: 'Currzy — Currency Library',
+        image: '/projects/currzy.png',
+        description: 'Free open-source library for fetching, managing, and converting up-to-date exchange rates from multiple reliable sources, with easy provider selection.',
+        url: 'https://currzy.anidzen.com'
+      },
       { name: 'Cyberhack pro', image: '/projects/cyberhack-pro.png', description: 'A huge selection of cheats for your favorite games Our products are the most secure solutions for those who want to play their favorite game with cheats', url: 'https://cyberhack.pro' },
       {
         name: 'Rus military badges',
@@ -19,13 +25,14 @@ export default defineEventHandler(() => {
       { name: 'UDP Logistics', image: '/projects/udp-logistics.png', description: 'UDP Logistics specializes in shipping parcels and cargo between Uzbekistan and Europe.' }
     ],
     hy: [
-      { name: 'Cyberhack pro', image: '/projects/cyberhack-pro.png', description: 'Շատ մեծ ընտրություն խաբեությունների՝ ձեր սիրած խաղերի համար: Մեր արտադրանքները ամենաանվտանգ լուծումներն են նրանց համար, ովքեր ցանկանում են խաղալ իրենց սիրած խաղը խաբեություններով:', url: 'https://cyberhack.pro' },
       {
-        name: 'Ռուսական բանակի ուսադիրներ',
-        image: '/projects/rus-military-badges.png',
-        description: 'Այս ռեսուրս-փաթեթը փոխարինում է ստանդարտ նշանները Ռուսական բանակի զինվորական կոչումների ուսադիրներով։ Հարմար է սերվերների, մոդերի, անձնական աշխարհների համար և կարող է ծառայել որպես սեփական նշանների ձևանմուշ։',
-        url: 'https://github.com/Zone-13/rus-military-badges'
+        name: 'Currzy — Վալյուտայի գրադարան',
+        image: '/projects/currzy.png',
+        description: 'Անվճար open-source գրադարան՝ թարմ փոխարժեքների ստացման, կառավարելու և փոխարկելու համար մի քանի վստահելի աղբյուրներից՝ հեշտորեն ընտրելով մատակարարին։',
+        url: 'https://currzy.anidzen.com'
       },
+      { name: 'Cyberhack pro', image: '/projects/cyberhack-pro.png', description: 'Շատ մեծ ընտրություն խաբեությունների՝ ձեր սիրած խաղերի համար: Մեր արտադրանքները ամենաանվտանգ լուծումներն են նրանց համար, ովքեր ցանկանում են խաղալ իրենց սիրած խաղը խաբեություններով:', url: 'https://cyberhack.pro' },
+      { name: 'Ռուսական բանակի ուսադիրներ', image: '/projects/rus-military-badges.png', description: 'Այս ռեսուրս-փաթեթը փոխարինում է ստանդարտ նշանները Ռուսական բանակի զինվորական կոչումների ուսադիրներով։ Հարմար է սերվերների, մոդերի, անձնական աշխարհների համար և կարող է ծառայել որպես սեփական նշանների ձևանմուշ։', url: 'https://github.com/Zone-13/rus-military-badges' },
       { name: 'Ota-ku', image: '/projects/ota-ku.png', description: 'Լավագույն անվճար անիմե առցանց ռուսական ձայնավորմամբ: Հասցեք անիմեի աշխարհը ota-ku.am կայքում՝ դիտելու անսահմանափակ անիմե:', url: 'https://ota-ku.am' },
       { name: 'Omex Proxy', image: '/projects/omex-proxy.png', description: 'Պլատֆորմ պրոքսի սերվերների վաճառքի և կառավարման համար՝ կայքի և Telegram Web App-ի միջոցով ավտոմատ ակտիվացմամբ և թարմացմամբ:', url: 'https://omexai.com' },
       { name: 'Mari Karkas', image: '/projects/mari-karkas.png', description: 'Ընկերություն, որը մասնագիտացած է կառույցային տների և բաղնիքների turnkey կառուցման մեջ՝ որակի երաշխիքով: Կառուցման ժամկետը մինչև 30 օր:', url: 'https://quiz.mari-karkas.ru' },
@@ -37,6 +44,7 @@ export default defineEventHandler(() => {
       { name: 'UDP Logistics', image: '/projects/udp-logistics.png', description: 'UDP Logistics մասնագիտացած է Ուզբեկստանից Եվրոպա փաթեթների և բեռների առաքման մեջ:' }
     ],
     ru: [
+      { name: 'Currzy — библиотека валют', image: '/projects/currzy.png', description: 'Бесплатная open-source библиотека для получения, управления и конвертации актуальных курсов валют из нескольких надежных источников с возможностью легкого выбора поставщика.', url: 'https://currzy.anidzen.com' },
       { name: 'Cyberhack pro', image: '/projects/cyberhack-pro.png', description: 'Огромный выбор читов для ваших любимых игр. Наши продукты — самые безопасные решения для тех, кто хочет играть с читами.', url: 'https://cyberhack.pro' },
       {
         name: 'Русские армейские погоны',

@@ -21,7 +21,7 @@ const { experienceString } = useExperienceString()
 <template>
   <section class="mb-10">
     <div class="col-span-2 space-y-5">
-      <UiPageHeader
+      <UiHeading
         :title="`${$t('experience.title')} — ${experienceString}`"
         :description="$t('experience.description')"
       />

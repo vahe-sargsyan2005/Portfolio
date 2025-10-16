@@ -50,9 +50,9 @@
   "projects": {
     "title": "What I Create and Develop",
     "description": "Author's projects and commercial cases brought to life from scratch — from idea to scaling. I implement solutions in IT, design, and related creative and business areas.",
-    "haveIdea": "Have a project in mind?",
-    "whatIOffer": "I’ll gladly help bring your idea to life — from concept to a ready-made solution. Describe what you want, and we’ll discuss everything in detail.",
-    "contactTelegram": "Message on Telegram"
+    "have_idea": "Have a project in mind?",
+    "what_i_offer": "I am happy to help bring your idea to life — from the initial concept to a fully finished solution. We can discuss every detail of the project, choose the most suitable technologies and approaches, ensuring the result is as efficient and high-quality as possible. My goal is to make the process transparent and convenient for you, so your idea is realized exactly as you envision it.",
+    "contact_telegram": "Message on Telegram"
   },
   "shop": {
     "title": "Custom Solutions and Projects",

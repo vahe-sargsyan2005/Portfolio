@@ -9,8 +9,8 @@ export default defineEventHandler(() => {
       { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
       { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
       { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-      { name: 'Vue 3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
-      { name: 'Nuxt 3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg' },
+      { name: 'Vue 2-3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
+      { name: 'Nuxt 2-4', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg' },
       { name: 'Pinia', icon: 'https://logolist.net/wp-content/uploads/2024/04/pinia.svg' },
       { name: 'Vitest', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitest/vitest-original.svg' },
       { name: 'Vuetify', icon: 'https://bestofjs.org/logos/vuetify.svg' },
@@ -19,8 +19,8 @@ export default defineEventHandler(() => {
       { name: 'ShadCN', icon: 'https://avatars.githubusercontent.com/u/139895814?s=200&v=4' }
     ],
     backend: [
-      { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
-      { name: 'Laravel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
+      { name: 'PHP', icon: '/tech/php.svg' },
+      { name: 'Laravel', icon: '/tech/laravel.svg' },
       { name: 'Inertia.js', icon: '/tech/inertia-js.svg' },
       { name: 'Livewire', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/livewire/livewire-original.svg' },
       { name: 'Moonshine', icon: 'https://demo.moonshine-laravel.com/vendor/moonshine/logo-small.svg' },
@@ -29,25 +29,33 @@ export default defineEventHandler(() => {
       { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
       { name: 'PostgresSQL', icon: '/tech/postgresql.svg' },
       { name: 'Kafka', icon: '/tech/kafka.svg' },
+      { name: 'RabbitMQ', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg' },
       { name: 'GraphQL', icon: '/tech/graphql.svg' },
       { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
       { name: 'Cassandra', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg' },
       { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
+      { name: 'KeyDB', icon: '/tech/key-db.webp' },
       { name: 'Memcached', icon: 'https://www.vectorlogo.zone/logos/memcached/memcached-icon.svg' },
       { name: 'Elasticsearch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg' }
     ],
     tools: [
       { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
-      { name: 'GitHub Actions', icon: '/tech/github-actions.svg' },
+      { name: 'WebStorm', icon: '/tech/web-storm.svg' },
+      { name: 'PhpStorm', icon: '/tech/php-storm.svg' },
+      { name: 'DataGrip', icon: '/tech/data-grip.svg' },
       { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+      { name: 'Postman', icon: '/tech/postman.svg' },
+      { name: 'GitHub Actions', icon: '/tech/github-actions.svg' },
       { name: 'ESLint', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg' },
       { name: 'Prettier', icon: '/tech/prettier.svg' },
-      { name: 'Postman', icon: '/tech/postman.svg' },
       { name: 'Composer', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg' },
       { name: 'npm', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
       { name: 'yarn', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg' },
       { name: 'pnpm', icon: 'https://avatars.githubusercontent.com/u/167082526?s=200&v=4' },
-      { name: 'Vitejs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg' }
+      { name: 'Vitejs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg' },
+      { name: 'FreeKassa', icon: '/tech/freekassa.png' },
+      { name: 'Stripe', icon: '/tech/stripe.jpeg' },
+      { name: 'Platega.io', icon: '/tech/platega.svg' }
     ]
   }
 })

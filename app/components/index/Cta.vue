@@ -40,20 +40,20 @@ function downloadResume(lang: string): void {
             <NuxtImg
               :src="global.picture.src"
               :alt="global.picture.alt"
-              width="110"
-              height="110"
+              width="112"
+              height="112"
               format="webp"
-              class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-1 border-muted shadow-xl"
-              :placeholder="img(global.picture.src, { h: 10, f: 'png', blur: 0.3, q: 50 })"
+              class="w-25 h-25 sm:w-28 sm:h-28 rounded-full border-1 border-muted"
+              :placeholder="img(global.picture.src, createPlaceholder(112, 112))"
             />
           </div>
         </div>
         <h2 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted text-center">
           {{ t('cta.title') }}
         </h2>
-        <h4 class="font-light sm:text-lg tracking-tight text-center text-muted mt-3">
+        <h5 class="font-light text-lg text-center text-muted mt-2">
           {{ t('cta.description') }}
-        </h4>
+        </h5>
       </div>
     </template>
 
