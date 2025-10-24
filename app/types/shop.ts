@@ -9,8 +9,5 @@ export type ShopItem = {
   download?: string
 }
 
-export interface TranslatedShopItems {
-  ru: ShopItem[]
-  en: ShopItem[]
-  hy: ShopItem[]
-}
+export type TranslatedShopItems = Translated<ShopItem>
+

@@ -3,8 +3,4 @@ export interface Achievement {
   description: string
 }
 
-export interface TranslatedAchievements {
-  ru: Achievement[]
-  en: Achievement[]
-  hy: Achievement[]
-}
+export type TranslatedAchievements = Translated<Achievement>

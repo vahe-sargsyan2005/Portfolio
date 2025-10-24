@@ -5,8 +5,4 @@ export type Project = {
   url?: string
 }
 
-export interface TranslatedProjects {
-  ru: Project[]
-  en: Project[]
-  hy: Project[]
-}
+export type TranslatedProjects = Translated<Project>

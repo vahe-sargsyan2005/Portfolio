@@ -1,11 +1,7 @@
 export interface Education {
   title: string
   description: string
-  image: string
+  url: string
 }
 
-export interface TranslatedEducation {
-  ru: Education[]
-  en: Education[]
-  hy: Education[]
-}
+export type TranslatedEducation = Translated<Education>

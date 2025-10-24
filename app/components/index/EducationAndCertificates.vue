@@ -26,18 +26,21 @@ const educations = computed<Education[]>(() => {
     />
 
     <div class="space-y-4">
-      <div
+      <a
         v-for="(item, index) in educations"
         :key="'edu-' + index"
-        class="border-l-3 pl-4 border-muted"
+        :href="item.url || '#'"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block border-l pl-4 border-muted group hover:border-primary transition-colors cursor-pointer"
       >
-        <h5 class="font-semibold text-base">
+        <h5 class="font-semibold text-base group-hover:text-primary transition-colors">
           {{ item.title }}
         </h5>
         <p class="text-sm text-muted">
           {{ item.description }}
         </p>
-      </div>
+      </a>
     </div>
   </div>
 </template>

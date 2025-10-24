@@ -6,8 +6,4 @@ export interface Experience {
   description: string
 }
 
-export interface TranslatedExperiences {
-  ru: Experience[]
-  en: Experience[]
-  hy: Experience[]
-}
+export type TranslatedExperiences = Translated<Experience>

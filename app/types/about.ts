@@ -3,8 +3,4 @@ export interface About {
   content: string
 }
 
-export interface TranslatedAbout {
-  ru: About[]
-  en: About[]
-  hy: About[]
-}
+export type TranslatedAbout = Translated<About>
