@@ -190,8 +190,8 @@ const educations = computed<Education[]>(() => {
           </div>
         </div>
       </div>
-      <div class="mt-4 border-t-1 border-neutral-200 pt-4 grid md:grid-cols-2 md:gap-5">
-        <div class="space-y-4 border-r-1 border-neutral-200">
+      <div class="mt-4 border-t-1 border-neutral-200 pt-4 md:gap-5">
+        <div class="space-y-4 border-r border-neutral-200">
           <div>
             <h4 class="font-semibold text-xl">
               {{ t('education.title') }}
@@ -203,7 +203,7 @@ const educations = computed<Education[]>(() => {
           <div
             v-for="(item, index) in educations"
             :key="'edu-' + index"
-            class="border-l-3 pl-4 border-neutral-200"
+            class="border-l pl-4 border-neutral-200"
           >
             <h5 class="font-semibold text-base">
               {{ item.title }}
@@ -213,24 +213,7 @@ const educations = computed<Education[]>(() => {
             </p>
           </div>
         </div>
-        <div class="space-y-4">
-          <div>
-            <h4 class="font-semibold text-xl">
-              {{ t('activity.title') }}
-            </h4>
-            <h6 class="text-neutral-700 text-sm">
-              {{ t('activity.description') }}
-            </h6>
-          </div>
-          <div class="space-y-2 text-neutral-700 text-sm">
-            <p>
-              {{ $t('activity.opensource') }}
-            </p>
-            <p>
-              {{ $t('activity.personal') }}
-            </p>
-          </div>
-        </div>
+
       </div>
     </section>
   </main>
