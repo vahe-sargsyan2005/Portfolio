@@ -3,9 +3,4 @@ export interface Activity {
   url?: string
 }
 
-export interface TranslatedActivities {
-  ru: Activity[]
-  en: Activity[]
-  hy: Activity[]
-  uk: Activity[]
-}
+export type TranslatedActivities = Translated<Activity>

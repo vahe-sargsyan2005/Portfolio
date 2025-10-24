@@ -4,8 +4,16 @@ export default defineEventHandler((): TranslatedShopItems => {
   return <TranslatedShopItems>{
     en: [
       {
+        name: 'Ota-ku',
+        description: 'Free online anime streaming with Russian voice-over. Dive into endless anime adventures on ota-ku.am — the portal for true anime fans.',
+        image: '/projects/ota-ku.png',
+        url: 'https://ota-ku.am',
+        price: 0,
+        discount: 100
+      },
+      {
         name: 'W33bv.gl Portfolio',
-        description: 'My personal open-source portfolio website. Showcasing full-stack developer skills, projects, and experience.',
+        description: 'Personal portfolio showcasing full-stack projects, skills, and development experience. Open-source and built with a modern tech stack.',
         image: '/projects/portfolio.png',
         url: 'https://vahe.anidzen.com',
         github: 'https://github.com/vahe-sargsyan2005/Portfolio',
@@ -14,7 +22,7 @@ export default defineEventHandler((): TranslatedShopItems => {
       },
       {
         name: 'Currzy — Currency Library',
-        description: 'Free open-source library for fetching, managing, and converting up-to-date exchange rates from multiple reliable sources, with easy provider selection.',
+        description: 'Open-source library for fetching, managing, and converting up-to-date currency exchange rates from multiple reliable providers. Easily integrates into any project.',
         image: '/projects/currzy.png',
         url: 'https://currzy.anidzen.com',
         github: 'https://github.com/Currzy',
@@ -22,8 +30,8 @@ export default defineEventHandler((): TranslatedShopItems => {
         discount: 25
       },
       {
-        name: 'Rus military badges',
-        description: 'This resource pack was created to replace standard symbols with images of Russian Army ranks. It can be used for servers, mods, or personal worlds, and also as a template for creating your own custom badges.',
+        name: 'Rus Military Badges',
+        description: 'A resource pack replacing default icons with insignias of the Russian army. Perfect for servers, mods, personal projects, and templates.',
         image: '/projects/rus-military-badges.png',
         url: 'https://modrinth.com/resourcepack/rus-military-badges',
         github: 'https://github.com/Zone-13/rus-military-badges',
@@ -31,39 +39,19 @@ export default defineEventHandler((): TranslatedShopItems => {
         discount: 100
       }
     ],
-    hy: [
-      {
-        name: 'W33bv.gl Պորտֆոլիո',
-        description: 'Իմ անձնական պորտֆոլիո կայքը՝ բաց կոդով։ Ներկայացնում է full-stack ծրագրավորողի հմտությունները, նախագծերն ու փորձը։',
-        image: '/projects/portfolio.png',
-        url: 'https://vahe.anidzen.com',
-        github: 'https://github.com/vahe-sargsyan2005/Portfolio',
-        price: 0,
-        discount: 100
-      },
-      {
-        name: 'Currzy — Վալյուտայի գրադարան',
-        description: 'Անվճար open-source գրադարան՝ թարմ փոխարժեքների ստացման, կառավարելու և փոխարկելու համար մի քանի վստահելի աղբյուրներից՝ հեշտորեն ընտրելով մատակարարին։',
-        image: '/projects/currzy.png',
-        url: 'https://currzy.anidzen.com',
-        github: 'https://github.com/Currzy',
-        price: 2800,
-        discount: 25
-      },
-      {
-        name: 'Ռուսական բանակի նշաններ',
-        description: 'Այս ռեսուրս փաքը ստեղծվել է ստանդարտ սիմվոլները փոխարինելու համար՝ ռուսական բանակի աստիճանների պատկերներով։ Կարելի է օգտագործել սերվերներում, մոդերում կամ անձնական աշխարհներում, ինչպես նաև որպես օրինակ ձեր սեփական նշանների ստեղծման համար։',
-        image: '/projects/rus-military-badges.png',
-        url: 'https://modrinth.com/resourcepack/rus-military-badges',
-        github: 'https://github.com/Zone-13/rus-military-badges',
-        price: 0,
-        discount: 100
-      }
-    ],
+
     ru: [
       {
+        name: 'Ota-ku',
+        description: 'Бесплатный онлайн просмотр аниме с русской озвучкой. Погружайтесь в неограниченные аниме-приключения на ota-ku.am — портале для настоящих фанатов аниме',
+        image: '/projects/ota-ku.png',
+        url: 'https://ota-ku.am',
+        price: 0,
+        discount: 100
+      },
+      {
         name: 'W33bv.gl Portfolio',
-        description: 'Мой персональный сайт-портфолио с открытым исходным кодом. Демонстрация проектов, навыков и опыта full-stack разработчика.',
+        description: 'Личное портфолио с демонстрацией full-stack проектов, навыков и опыта разработки. Open-source, современный стек технологий.',
         image: '/projects/portfolio.png',
         url: 'https://vahe.anidzen.com',
         github: 'https://github.com/vahe-sargsyan2005/Portfolio',
@@ -72,7 +60,7 @@ export default defineEventHandler((): TranslatedShopItems => {
       },
       {
         name: 'Currzy — библиотека валют',
-        description: 'Бесплатная open-source библиотека для получения, управления и конвертации актуальных курсов валют из нескольких надежных источников с возможностью легкого выбора поставщика.',
+        description: 'Open-source библиотека для получения, управления и конвертации актуальных курсов валют от нескольких надёжных провайдеров. Легко интегрируется в проекты.',
         image: '/projects/currzy.png',
         url: 'https://currzy.anidzen.com',
         github: 'https://github.com/Currzy',
@@ -81,7 +69,82 @@ export default defineEventHandler((): TranslatedShopItems => {
       },
       {
         name: 'Русские армейские погоны',
-        description: 'Этот ресурс-пак был создан для замены стандартных символов изображениями воинских званий Российской армии. Его можно использовать на серверах, в модах или в личных мирах, а также как шаблон для собственных значков.',
+        description: 'Пакет ресурсов заменяет стандартные иконки на знаки различия российской армии. Идеально для серверов, модов, личных проектов и шаблонов.',
+        image: '/projects/rus-military-badges.png',
+        url: 'https://modrinth.com/resourcepack/rus-military-badges',
+        github: 'https://github.com/Zone-13/rus-military-badges',
+        price: 0,
+        discount: 100
+      }
+    ],
+
+    hy: [
+      {
+        name: 'Ota-ku',
+        description: 'Անվճար անիմե դիտում ռուսերեն ձայնավորմամբ։ Ներծծվեք անսահման անիմե արկածների աշխարհում ota-ku.am կայքում՝ իսկական անիմե սիրահարների համար։',
+        image: '/projects/ota-ku.png',
+        url: 'https://ota-ku.am',
+        price: 0,
+        discount: 100
+      },
+      {
+        name: 'W33bv.gl Portfolio',
+        description: 'Անձնական պորտֆոլիո՝ full-stack նախագծերի, հմտությունների և փորձի ցուցադրմամբ։ Բաց կոդով և կառուցված ժամանակակից տեխնոլոգիաներով։',
+        image: '/projects/portfolio.png',
+        url: 'https://vahe.anidzen.com',
+        github: 'https://github.com/vahe-sargsyan2005/Portfolio',
+        price: 0,
+        discount: 100
+      },
+      {
+        name: 'Currzy — արժույթի գրադարան',
+        description: 'Բաց կոդով գրադարան՝ արժույթների փոխարժեքները ստանալու, կառավարելու և փոխակերպելու համար՝ մի քանի վստահելի աղբյուրներից։ Հեշտ է ինտեգրվում ցանկացած նախագծում։',
+        image: '/projects/currzy.png',
+        url: 'https://currzy.anidzen.com',
+        github: 'https://github.com/Currzy',
+        price: 2800,
+        discount: 25
+      },
+      {
+        name: 'Ռուսական բանակի ուսադիրներ',
+        description: 'Ռեսուրս փաթեթը փոխարինում է ստանդարտ նշանները ռուսական բանակի տարբերանշաններով։ Հարմար է սերվերների, մոդերի և անհատական նախագծերի համար։',
+        image: '/projects/rus-military-badges.png',
+        url: 'https://modrinth.com/resourcepack/rus-military-badges',
+        github: 'https://github.com/Zone-13/rus-military-badges',
+        price: 0,
+        discount: 100
+      }
+    ],
+    uk: [
+      {
+        name: 'Ota-ku',
+        description: 'Безкоштовний онлайн перегляд аніме з російським озвученням. Пориньте у безмежні аніме-пригоди на ota-ku.am — порталі для справжніх фанатів аніме.',
+        image: '/projects/ota-ku.png',
+        url: 'https://ota-ku.am',
+        price: 0,
+        discount: 100
+      },
+      {
+        name: 'W33bv.gl Portfolio',
+        description: 'Особисте портфоліо з демонстрацією full-stack проєктів, навичок та досвіду розробки. Open-source, сучасний технологічний стек.',
+        image: '/projects/portfolio.png',
+        url: 'https://vahe.anidzen.com',
+        github: 'https://github.com/vahe-sargsyan2005/Portfolio',
+        price: 0,
+        discount: 100
+      },
+      {
+        name: 'Currzy — бібліотека валют',
+        description: 'Open-source бібліотека для отримання, керування та конвертації актуальних валютних курсів від кількох надійних провайдерів. Легко інтегрується у будь-які проєкти.',
+        image: '/projects/currzy.png',
+        url: 'https://currzy.anidzen.com',
+        github: 'https://github.com/Currzy',
+        price: 2800,
+        discount: 25
+      },
+      {
+        name: 'Російські армійські погони',
+        description: 'Пакет ресурсів замінює стандартні іконки на знаки розрізнення російської армії. Ідеально підходить для серверів, модів, персональних проєктів і шаблонів.',
         image: '/projects/rus-military-badges.png',
         url: 'https://modrinth.com/resourcepack/rus-military-badges',
         github: 'https://github.com/Zone-13/rus-military-badges',

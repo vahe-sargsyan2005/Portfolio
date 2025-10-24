@@ -61,8 +61,7 @@ export default defineNuxtConfig({
     lazy: false,
     defaultLocale: 'en',
     strategy: 'prefix_and_default',
-    vueI18n: './i18n.config.ts',
-    returnObjects: true
+    vueI18n: './i18n.config.ts'
   },
 
   image: {
