@@ -4,29 +4,33 @@
     "projects": "Projects",
     "blog": "Blog",
     "shop": "Shop",
-    "anidzen": "Anidzen",
-    "about": "About Me"
+    "about": "About"
   },
   "openInGithub": "Open in Github",
   "cta": {
     "title": "Hi, I'm Vahe — Full Stack Developer",
-    "description": "Developing scalable products with a strong focus on high performance, stability, and enhancing user experience for businesses.",
-    "resumeEn": "Resume (EN)",
-    "resumeHy": "Resume (HY)",
-    "resumeRu": "Resume (RU)",
-    "resumeUk": "Resume (UK)",
-    "projects": "View Projects",
-    "downloadPlaceholder": "Download Resume"
+    "description": "I create reliable and scalable web solutions focusing on performance, stability, and user-friendliness. I help companies turn ideas into stable and effective products.",
+    "resume": {
+      "label": "Resume",
+      "download": "Download Resume",
+      "languages": {
+        "en": "English",
+        "hy": "Armenian",
+        "ru": "Russian",
+        "uk": "Ukrainian"
+      }
+    },
+    "projects": "View Projects"
   },
   "availability": {
     "available": "Available for work",
-    "unavailable": "Not available now"
+    "unavailable": "Currently unavailable"
   },
   "experience": {
     "title": "Experience",
-    "description": "My professional journey, key roles, and achievements in various companies.",
-    "years": ["year", "years", "years"],
-    "months": ["month", "months", "months"],
+    "description": "My professional path, key roles, and achievements in companies I collaborated with.",
+    "years": ["year", "years"],
+    "months": ["month", "months"],
     "lessThanMonth": "less than a month"
   },
   "education": {
@@ -34,30 +38,28 @@
     "description": "My education and internships"
   },
   "activity": {
-    "title": "Extracurricular Activities",
-    "description": "My projects and initiatives outside of my main work.",
-    "opensource": "I participate in the development of the open-source ecosystem — from Nuxt UI to LibreTranslate and other projects.",
-    "personal": "In my free time, I work on various initiatives and collaborative projects: OTA-KU, Currenzy, GeoFence, Hentai-Voice, and others."
+    "title": "Extracurricular Activity",
+    "description": "My projects and initiatives outside of work."
   },
   "achievements": {
-    "title": "My Achievements",
-    "description": "Below are key milestones in my professional journey."
+    "title": "Achievements",
+    "description": "Milestones of my professional journey."
   },
   "about": {
     "title": "About Me",
     "description": "About me as a developer",
-    "intro": "My name is Vahe, I am {age} years old. I am a full-stack developer specializing in Nuxt.js and Laravel. I create fast and convenient web applications, have experience with microservices, APIs (REST and GraphQL), system integration, and complex UIs. I value reliability, clean code, and projects that deliver real impact."
+    "intro": "My name is Vahe, I am {age} years old. Full-stack developer specializing in Nuxt.js and Laravel. I create fast and convenient web apps, worked with microservices, APIs (REST & GraphQL), system integrations, and complex UI. I value reliability, clean code, and projects that bring real value."
   },
   "projects": {
-    "title": "What I Create and Develop",
-    "description": "Author's projects and commercial cases brought to life from scratch — from idea to scaling. I implement solutions in IT, design, and related creative and business areas.",
-    "have_idea": "Have a project in mind?",
-    "what_i_offer": "I am happy to help bring your idea to life — from the initial concept to a fully finished solution. We can discuss every detail of the project, choose the most suitable technologies and approaches, ensuring the result is as efficient and high-quality as possible. My goal is to make the process transparent and convenient for you, so your idea is realized exactly as you envision it.",
-    "contact_telegram": "Message on Telegram"
+    "title": "What I Build and Develop",
+    "description": "Author projects and commercial cases implemented from scratch — from idea to scaling. I implement IT, design, and other creative/business solutions.",
+    "have_idea": "Got a project idea?",
+    "what_i_offer": "I’ll be happy to help bring your idea to life — from initial concept to a fully ready solution. We can discuss all project details, choose the best technologies and approaches for maximum efficiency. My goal is to make the process transparent and convenient so your idea becomes exactly what you imagined.",
+    "contact_telegram": "Contact on Telegram"
   },
   "shop": {
-    "title": "Custom Solutions and Projects",
-    "description": "I sell and share my own work — from sleek landing pages to scalable microservice systems and turnkey solutions. Everything you need to launch and grow your product.",
+    "title": "Author Solutions and Projects",
+    "description": "I sell and share my own developments — from stylish landing pages to large microservice systems and ready-to-use solutions. Everything needed for a fast start and product growth.",
     "discount": "Discount",
     "free": "Free",
     "watch": "View",
