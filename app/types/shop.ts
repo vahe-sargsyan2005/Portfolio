@@ -10,4 +10,3 @@ export type ShopItem = {
 }
 
 export type TranslatedShopItems = Translated<ShopItem>
-

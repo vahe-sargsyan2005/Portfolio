@@ -39,7 +39,6 @@ useSeoMeta({
     />
 
     <section class="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
-
       <a
         v-for="project in projects"
         :key="project.name"

@@ -18,14 +18,17 @@ const about = computed<About[]>(() => {
 
 <template>
   <div>
-    <div class="mb-5">
-      <UiHeading :title="$t('about.title')" :description="$t('about.description')"/>
+    <div class="mb-4">
+      <UiHeading
+        :title="$t('about.title')"
+        :description="$t('about.description')"
+      />
     </div>
-    <div class="space-y-4">
+    <div class="space-y-3">
       <div
         v-for="(item, idx) in about"
         :key="idx"
-        class="border-l-3 pl-4 border-muted"
+        class="border-l pl-4 border-muted"
       >
         <h3 class="font-semibold text-base">
           {{ item.title }}

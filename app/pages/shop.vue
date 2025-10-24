@@ -70,19 +70,19 @@ useSeoMeta({
             </p>
             <div class="flex items-center gap-3 mt-3">
               <div>
-              <span
-                v-if="project.price === 0"
-                class="text-success font-semibold"
-              >{{ t('shop.free') }}</span>
+                <span
+                  v-if="project.price === 0"
+                  class="text-success font-semibold"
+                >{{ t('shop.free') }}</span>
                 <span
                   v-else
                   class="font-semibold"
                 >
-                <span v-if="project.discount"> $ {{ (project.price * (1 - project.discount / 100)).toFixed(1) }} /
-                  <span class="text-xs text-muted italic underline">$ {{ project.price }}</span>
+                  <span v-if="project.discount"> $ {{ (project.price * (1 - project.discount / 100)).toFixed(1) }} /
+                    <span class="text-xs text-muted italic underline">$ {{ project.price }}</span>
+                  </span>
+                  <span v-else>$ {{ project.price }}</span>
                 </span>
-                <span v-else>$ {{ project.price }}</span>
-              </span>
               </div>
               <UButton
                 v-if="project.url"
@@ -102,15 +102,15 @@ useSeoMeta({
                 variant="subtle"
               />
 
-              <!--            <UButton-->
-              <!--              v-if="project.repository"-->
-              <!--              :href="project.repository"-->
-              <!--              target="_blank"-->
-              <!--              icon="i-simple-icons-github"-->
-              <!--              color="neutral"-->
-              <!--            >-->
-              <!--              {{ t('shop.download') }}-->
-              <!--            </UButton>-->
+              <!--            <UButton -->
+              <!--              v-if="project.repository" -->
+              <!--              :href="project.repository" -->
+              <!--              target="_blank" -->
+              <!--              icon="i-simple-icons-github" -->
+              <!--              color="neutral" -->
+              <!--            > -->
+              <!--              {{ t('shop.download') }} -->
+              <!--            </UButton> -->
             </div>
           </div>
         </div>
