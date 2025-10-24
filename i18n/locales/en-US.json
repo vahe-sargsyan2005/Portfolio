@@ -29,8 +29,8 @@
   "experience": {
     "title": "Experience",
     "description": "My professional path, key roles, and achievements in companies I collaborated with.",
-    "years": ["year", "years"],
-    "months": ["month", "months"],
+    "years": ["year", "years", "years"],
+    "months": ["month", "months", "months"],
     "lessThanMonth": "less than a month"
   },
   "education": {
