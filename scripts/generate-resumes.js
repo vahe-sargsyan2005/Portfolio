@@ -5,7 +5,7 @@ import { launch } from 'puppeteer'
 import fs from 'fs-extra'
 import kill from 'tree-kill'
 
-const langs = ['en', 'ru', 'hy']
+const langs = ['en', 'ru', 'hy', 'uk']
 const baseUrl = 'http://localhost:3000'
 
 function waitForServerReady(url, timeout = 10000) {
