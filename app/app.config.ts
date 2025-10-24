@@ -58,12 +58,6 @@ export default defineAppConfig({
         'aria-label': 'Vahe on Facebook'
       },
       {
-        'icon': 'i-simple-icons-vk',
-        'to': 'https://vk.com/Vahesargsyan2005',
-        'target': '_blank',
-        'aria-label': 'Vahe on VK'
-      },
-      {
         'icon': 'i-simple-icons-maildotru',
         'to': 'mailto:w33bv.gl@gmail.com',
         'target': '_blank',

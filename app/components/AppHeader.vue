@@ -37,7 +37,7 @@ const isActive = (path: string) => {
 <template>
   <header class="sticky z-50 top-2 sm:top-5 flex justify-center">
     <nav
-      class="flex gap-3 sm:gap-2 bg-muted/80 backdrop-blur-sm rounded-full px-4 py-2 border border-muted/50 shadow-lg shadow-neutral-950/5"
+      class="flex gap-3 sm:gap-2 bg-elevated/50 backdrop-blur-sm rounded-full px-4 py-2 border border-muted/50 shadow-lg shadow-neutral-950/5"
     >
       <NuxtLink
         v-for="link in links"

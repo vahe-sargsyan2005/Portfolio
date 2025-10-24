@@ -55,12 +55,14 @@ export default defineNuxtConfig({
     locales: [
       { code: 'en', language: 'en-US', name: 'English' },
       { code: 'ru', language: 'ru-RU', name: 'Русский' },
-      { code: 'hy', language: 'hy-AM', name: 'Հայերեն' }
+      { code: 'hy', language: 'hy-AM', name: 'Հայերեն' },
+      { code: 'uk', language: 'uk-UA', name: 'Українська' }
     ],
     lazy: false,
     defaultLocale: 'en',
     strategy: 'prefix_and_default',
-    vueI18n: './i18n.config.ts'
+    vueI18n: './i18n.config.ts',
+    returnObjects: true
   },
 
   image: {

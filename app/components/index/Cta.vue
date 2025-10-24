@@ -1,18 +1,19 @@
 <script setup lang="ts">
-const { global } = useAppConfig()
-const { t } = useI18n()
-const { footer } = useAppConfig()
+const { global, footer } = useAppConfig()
+const { t, locales } = useI18n()
+
 const img = useImage()
 const config = useRuntimeConfig()
 
-const resumeOptions = computed(() => [
-  { label: t('cta.resumeEn'), value: 'en' },
-  { label: t('cta.resumeHy'), value: 'hy' },
-  { label: t('cta.resumeRu'), value: 'ru' }
-])
+const resumeOptions = computed(() => {
+  return locales.value.map(locale => ({
+    value: locale.code,
+    label: locale.name
+  }))
+})
 
 function downloadResume(lang: string): void {
-  if (!['en', 'hy', 'ru'].includes(lang)) return
+  if (!['en', 'hy', 'ru', 'uk'].includes(lang)) return
 
   const isStaticHosting = config.public.appEnv === 'production'
   const url = isStaticHosting
@@ -62,7 +63,7 @@ function downloadResume(lang: string): void {
         <USelect
           variant="subtle"
           :items="resumeOptions"
-          :placeholder="t('cta.downloadPlaceholder')"
+          :placeholder="t('cta.resume.download')"
           @update:model-value="downloadResume"
         />
         <CommonAvailableStatus />
