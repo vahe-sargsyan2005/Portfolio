@@ -46,9 +46,11 @@ const isActive = (path: string) => {
         class="flex"
       >
         <UButton
-          :variant="isActive(link.to) ? 'solid' : 'link'"
-          color="neutral"
-          class="flex items-center gap-2 text-sm px-3 py-1.5 rounded-full cursor-pointer"
+          :variant="isActive(link.to) ? 'solid' : 'ghost'"
+          :class="[
+            'flex items-center gap-2 text-sm px-3 py-1.5 rounded-full cursor-pointer',
+            !isActive(link.to) ? 'opacity-80 dark:text-white text-muted' : ''
+          ]"
         >
           <UIcon
             :name="link.icon"
@@ -56,6 +58,7 @@ const isActive = (path: string) => {
           />
           <span class="hidden sm:inline">{{ t(`routes.${link.key}`) }}</span>
         </UButton>
+
       </NuxtLink>
 
       <div class="flex items-center">

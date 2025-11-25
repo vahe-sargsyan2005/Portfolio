@@ -14,7 +14,6 @@
       target="_blank"
       size="lg"
       icon="i-simple-icons-telegram"
-      color="neutral"
     >
       {{ $t('projects.contact_telegram') }}
     </UButton>

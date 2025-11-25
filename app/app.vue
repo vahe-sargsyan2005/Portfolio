@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui/locale'
 import AppIcons from '~/components/AppIcons.vue'
-import { ref, onMounted } from 'vue'
 
+const appConfig = useAppConfig()
 const colorMode = useColorMode()
 const { locale } = useI18n()
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
-// Настройка head
+const blackAsPrimary = computed(() => appConfig.theme.blackAsPrimary ? `:root { --ui-primary: black; } .dark { --ui-primary: white; }` : ':root {}')
+
 useHead({
   meta: [
     { charset: 'utf-8' },
@@ -16,6 +17,9 @@ useHead({
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico' }
+  ],
+  style: [
+    { innerHTML: blackAsPrimary, id: 'nuxt-ui-black-as-primary', tagPriority: -2 }
   ],
   htmlAttrs: {
     lang: locale.value
@@ -29,33 +33,6 @@ useSeoMeta({
   twitterCard: 'summary'
 })
 
-// --- Сезонная тема ---
-function useSeasonTheme() {
-  const season = ref<'winter' | 'spring' | 'summer' | 'autumn'>('winter')
-
-  const month = new Date().getMonth() + 1
-  if ([12, 1, 2].includes(month)) season.value = 'winter'
-  else if ([3, 4, 5].includes(month)) season.value = 'spring'
-  else if ([6, 7, 8].includes(month)) season.value = 'summer'
-  else season.value = 'autumn'
-
-  const seasonColors: Record<string, string> = {
-    winter: '#0ea5e9',   // голубой
-    spring: '#22c55e',   // зелёный
-    summer: '#facc15',   // жёлтый
-    autumn: '#f97316'    // оранжевый
-  }
-
-  const setSeasonTheme = () => {
-    document.documentElement.style.setProperty('--primary', seasonColors[season.value])
-  }
-
-  onMounted(() => setSeasonTheme())
-  return { season }
-}
-
-// Вызов хука
-useSeasonTheme()
 </script>
 
 <template>

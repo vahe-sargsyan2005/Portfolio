@@ -1,6 +1,3 @@
-// ~/plugins/season-theme.client.ts
-import { defineNuxtPlugin, useAppConfig } from '#app'
-
 export default defineNuxtPlugin(() => {
   const appConfig = useAppConfig()
 
@@ -13,18 +10,18 @@ export default defineNuxtPlugin(() => {
   else if ([6, 7, 8].includes(month)) season = 'summer'
   else season = 'autumn'
 
-  const seasonColors: Record<string, string> = {
+  const seasonColors: Record<'winter' | 'spring' | 'summer' | 'autumn', string> = {
     winter: 'blue',
     spring: '#22c55e',
     summer: '#facc15',
     autumn: 'orange'
   }
 
-  const primaryColor = seasonColors[season]
+  const primaryColor: string = seasonColors[season]
 
-  appConfig.ui.colors.primary = primaryColor
+  appConfig.ui.colors.primary = primaryColor as string
 
-  if (process.client) {
+  if (import.meta.client) {
     localStorage.setItem('nuxt-ui-primary', primaryColor)
   }
 })

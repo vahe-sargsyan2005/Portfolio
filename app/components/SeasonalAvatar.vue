@@ -50,7 +50,7 @@ const size = computed(() => props.size ?? 112)
       :width="size"
       :height="size"
       format="webp"
-      class="rounded-full border border-muted w-full h-full"
+      class="rounded-full border border-muted w-full h-full pointer-events-none select-none"
     />
   </div>
 </template>

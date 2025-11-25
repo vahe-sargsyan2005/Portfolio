@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { global, footer } = useAppConfig()
-const img = useImage()
 </script>
 
 <template>
@@ -16,19 +15,15 @@ const img = useImage()
         <UButton
           v-for="(link, index) of footer?.links"
           :key="index"
-          v-bind="{ color: 'neutral', variant: 'soft', ...link }"
+          v-bind="{ variant: 'soft', ...link }"
         />
       </div>
     </div>
-    <div class="hidden md:flex justify-center items-start">
-      <NuxtImg
-        class="rounded-xl border-2 border-muted pointer-events-none select-none"
-        width="150"
-        height="150"
-        format="webp"
+    <div class="hidden md:flex justify-center items-start rounded-full ring-2 ring-primary/80">
+      <SeasonalAvatar
         :src="global.picture.src"
         :alt="global.picture.alt"
-        :placeholder="img(global.picture.src, { h: 10, f: 'png', blur: 0.3, q: 50 })"
+        :size="150"
       />
     </div>
   </section>

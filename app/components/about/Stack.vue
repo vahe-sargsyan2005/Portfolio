@@ -17,7 +17,6 @@ const tabs = [
     <UTabs
       :items="tabs"
       class="w-full"
-      color="neutral"
       size="sm"
     >
       <template #frontend>

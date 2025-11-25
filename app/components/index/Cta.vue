@@ -56,7 +56,7 @@ function downloadResume(lang: string): void {
     <template #links>
       <div class="flex items-center justify-center gap-5">
         <USelect
-          variant="subtle"
+          class="outline-2 outline-primary"
           :items="resumeOptions"
           :placeholder="t('cta.resume.download')"
           @update:model-value="downloadResume"
@@ -67,7 +67,7 @@ function downloadResume(lang: string): void {
         <UButton
           v-for="(link, index) of footer?.links"
           :key="index"
-          v-bind="{ size: 'lg', color: 'neutral', variant: 'soft', ...link }"
+          v-bind="{ size: 'lg', variant: 'soft', ...link }"
         />
       </div>
     </template>
