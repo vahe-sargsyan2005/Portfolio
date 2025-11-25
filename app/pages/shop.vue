@@ -88,7 +88,6 @@ useSeoMeta({
                 v-if="project.url"
                 :href="project.url"
                 target="_blank"
-                color="neutral"
                 icon="i-lucide-link"
               >
                 {{ t('shop.watch') }}

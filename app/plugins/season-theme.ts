@@ -1,27 +1,13 @@
+import { defineNuxtPlugin } from '#app'
+import { useSeason } from '~/composables/useSeason'
+
 export default defineNuxtPlugin(() => {
+  const { primaryColor } = useSeason()
   const appConfig = useAppConfig()
 
-  // Определяем сезон
-  const month = new Date().getMonth() + 1
-  let season: 'winter' | 'spring' | 'summer' | 'autumn' = 'winter'
-
-  if ([12, 1, 2].includes(month)) season = 'winter'
-  else if ([3, 4, 5].includes(month)) season = 'spring'
-  else if ([6, 7, 8].includes(month)) season = 'summer'
-  else season = 'autumn'
-
-  const seasonColors: Record<'winter' | 'spring' | 'summer' | 'autumn', string> = {
-    winter: 'blue',
-    spring: '#22c55e',
-    summer: '#facc15',
-    autumn: 'orange'
-  }
-
-  const primaryColor: string = seasonColors[season]
-
-  appConfig.ui.colors.primary = primaryColor as string
+  appConfig.ui.colors.primary = primaryColor.value
 
   if (import.meta.client) {
-    localStorage.setItem('nuxt-ui-primary', primaryColor)
+    localStorage.setItem('nuxt-ui-primary', primaryColor.value)
   }
 })

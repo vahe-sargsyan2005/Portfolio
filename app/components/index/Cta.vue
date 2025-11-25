@@ -56,7 +56,7 @@ function downloadResume(lang: string): void {
     <template #links>
       <div class="flex items-center justify-center gap-5">
         <USelect
-          class="outline-2 outline-primary"
+          class="outline-1 outline-primary"
           :items="resumeOptions"
           :placeholder="t('cta.resume.download')"
           @update:model-value="downloadResume"

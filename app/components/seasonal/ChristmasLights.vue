@@ -39,7 +39,6 @@ const bulbsColors = wires.map(() => {
 </script>
 
 <template>
-  <ClientOnly v-if="isWinter">
     <div class="bottom-3 left-3 w-full fixed">
       <UButton
         variant="soft"
@@ -80,7 +79,6 @@ const bulbsColors = wires.map(() => {
         </div>
       </div>
     </div>
-  </ClientOnly>
 </template>
 
 <style scoped>
