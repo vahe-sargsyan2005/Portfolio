@@ -10,7 +10,6 @@ const bulbsPerLevel = 40
 const wires = Array.from({ length: levels }, (_, i) => i)
 const bulbs = Array.from({ length: bulbsPerLevel }, (_, i) => i)
 
-// Режимы гирлянды: 0 = выключено, 1 = стиль 1, 2 = стиль 2, 3 = стиль 3
 const mode = ref(1)
 
 function toggleMode() {
