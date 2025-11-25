@@ -12,49 +12,79 @@ const bulbs = Array.from({ length: bulbsPerLevel }, (_, i) => i)
 
 const mode = ref(1)
 
+const colors = [
+  '#FF0000',
+  '#00FF00',
+  '#0000FF',
+  '#FFFF00',
+  '#FF7F00'
+]
+
 function toggleMode() {
   mode.value++
   if (mode.value > 3) mode.value = 0
 }
+
+function getRandomColorExclude(prev: string | null) {
+  const available = colors.filter(c => c !== prev)
+  return available[Math.floor(Math.random() * available.length)]
+}
+
+const bulbsColors = wires.map(() => {
+  let prevColor: string | null = null
+  return bulbs.map(() => {
+    const color = getRandomColorExclude(prevColor)
+    prevColor = color
+    return color
+  })
+})
 </script>
 
+
 <template>
-  <div class="bottom-3 left-3 w-full fixed">
-    <UButton
-      variant="soft"
-      color="neutral"
-      icon="i-lucide-circle-power"
-      @click="toggleMode"
-    >
-    </UButton>
-  </div>
-  <div
-    v-if="isWinter"
-    class="pointer-events-none select-none top-0 left-0 w-full z-[9999] fixed overflow-hidden"
-  >
-    <div class="lightrope-wrapper">
-      <div
-        v-for="lvl in wires"
-        :key="lvl"
-        class="lightrope"
-        :style="{ top: `${lvl * 40}px` }"
+  <ClientOnly>
+    <div class="bottom-3 left-3 w-full fixed">
+      <UButton
+        variant="soft"
+        color="neutral"
+        icon="i-lucide-circle-power"
+        @click="toggleMode"
       >
-        <ul>
-          <li
-            v-for="b in bulbs"
-            :key="b"
-            :class="{
+      </UButton>
+    </div>
+    <div
+      v-if="isWinter"
+      class="pointer-events-none select-none top-0 left-0 w-full z-[9999] fixed overflow-hidden"
+    >
+      <div class="lightrope-wrapper">
+        <div
+          v-for="(lvl, lvlIndex) in wires"
+          :key="lvl"
+          class="lightrope"
+          :style="{ top: `${lvl * 40}px` }"
+        >
+          <ul>
+            <li
+              v-for="(b, bIndex) in bulbs"
+              :key="b"
+              :style="{
+              background: bulbsColors[lvlIndex][bIndex],
+              boxShadow: `0 4px 20px 3px ${bulbsColors[lvlIndex][bIndex]}`
+            }"
+              :class="{
               'off': mode === 0,
               'flash-1': mode === 1,
               'flash-2': mode === 2,
               'flash-3': mode === 3
             }"
-          />
-        </ul>
+            />
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+  </ClientOnly>
 </template>
+
 
 <style scoped>
 .lightrope-wrapper {
@@ -127,11 +157,8 @@ function toggleMode() {
 }
 .lightrope li:last-child::after { content: none; }
 
-/* Анимации */
-@keyframes flash-1 { 0%, 100% { opacity: 1; filter: brightness(1); } 50% { opacity: 0.5; filter: brightness(1.5); } }
+@keyframes flash-1 { 0%, 100% { opacity: 1; filter: brightness(1); } 50% { opacity: 0.3; filter: brightness(2.5); } }
 @keyframes flash-2 { 0%, 100% { opacity: 1; filter: brightness(1); } 50% { opacity: 0.4; filter: brightness(2); } }
 @keyframes flash-3 { 0%, 100% { opacity: 1; filter: brightness(1); } 50% { opacity: 0.3; filter: brightness(1.8); } }
 
-/* Кнопка пульта */
-button { cursor: pointer; }
 </style>
