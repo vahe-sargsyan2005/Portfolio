@@ -2,7 +2,6 @@
 const { global, footer } = useAppConfig()
 const { t, locales } = useI18n()
 
-const img = useImage()
 const config = useRuntimeConfig()
 
 const resumeOptions = computed(() => {
@@ -38,14 +37,10 @@ function downloadResume(lang: string): void {
       <div>
         <div class="mb-5">
           <div class="flex items-center justify-center">
-            <NuxtImg
+            <SeasonalAvatar
               :src="global.picture.src"
               :alt="global.picture.alt"
-              width="112"
-              height="112"
-              format="webp"
-              class="w-25 h-25 sm:w-28 sm:h-28 rounded-full border-1 border-muted"
-              :placeholder="img(global.picture.src, createPlaceholder(112, 112))"
+              :size="112"
             />
           </div>
         </div>

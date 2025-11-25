@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-
+    <AutumnEffects/>
     <ChristmasLights />
 
     <UContainer class="sm:border-x border-default max-w-4xl relative min-h-screen flex flex-col justify-between bg-elevated/10">
@@ -10,6 +10,5 @@
       </div>
       <AppFooter />
     </UContainer>
-
   </div>
 </template>

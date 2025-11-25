@@ -8,7 +8,7 @@ export default defineAppConfig({
     phone: '+374(94) 161-331',
     address: 'Armenia, Ararat Vedi.vosketap i.hakobyan 28',
     telegram: '@Vahesargsyan2005',
-    available: true,
+    available: false,
     birthday: '2005-03-30',
     experienceStartDate: '2022-01-01'
   },
