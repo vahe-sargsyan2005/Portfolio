@@ -5,7 +5,7 @@ const month = new Date().getMonth() + 1
 const isWinter = month === 11 || month === 12 || month === 1 || month === 2
 
 const levels = 1
-const bulbsPerLevel = 40
+const bulbsPerLevel = 20
 
 const wires = Array.from({ length: levels }, (_, i) => i)
 const bulbs = Array.from({ length: bulbsPerLevel }, (_, i) => i)
@@ -40,7 +40,6 @@ const bulbsColors = wires.map(() => {
 })
 </script>
 
-
 <template>
   <ClientOnly>
     <div class="bottom-3 left-3 w-full fixed">
@@ -49,12 +48,12 @@ const bulbsColors = wires.map(() => {
         color="neutral"
         icon="i-lucide-circle-power"
         @click="toggleMode"
-      >
-      </UButton>
+      />
     </div>
+
     <div
       v-if="isWinter"
-      class="pointer-events-none select-none top-0 left-0 w-full z-[9999] fixed overflow-hidden"
+      class="pointer-events-none select-none top-0 left-0 w-full z-[9999] fixed"
     >
       <div class="lightrope-wrapper">
         <div
@@ -67,17 +66,21 @@ const bulbsColors = wires.map(() => {
             <li
               v-for="(b, bIndex) in bulbs"
               :key="b"
-              :style="{
-              background: bulbsColors[lvlIndex][bIndex],
-              boxShadow: `0 4px 20px 3px ${bulbsColors[lvlIndex][bIndex]}`
-            }"
               :class="{
-              'off': mode === 0,
-              'flash-1': mode === 1,
-              'flash-2': mode === 2,
-              'flash-3': mode === 3
-            }"
-            />
+                off: mode === 0,
+                'flash-1': mode === 1,
+                'flash-2': mode === 2,
+                'flash-3': mode === 3
+              }"
+            >
+              <div
+                class="bulb"
+                :style="{
+                  background: bulbsColors[lvlIndex][bIndex],
+                  boxShadow: `0 4px 20px 3px ${bulbsColors[lvlIndex][bIndex]}`
+                }"
+              />
+            </li>
           </ul>
         </div>
       </div>
@@ -85,15 +88,7 @@ const bulbsColors = wires.map(() => {
   </ClientOnly>
 </template>
 
-
 <style scoped>
-.lightrope-wrapper {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  overflow: visible;
-}
-
 .lightrope {
   width: 100%;
   position: absolute;
@@ -116,23 +111,27 @@ const bulbsColors = wires.map(() => {
   width: 14px;
   height: 28px;
   margin: 18px 24px;
+}
+
+/* Лампа с анимацией */
+.lightrope li .bulb {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   animation-fill-mode: both;
   animation-duration: 1.7s;
   animation-iteration-count: infinite;
-
-  /* Начальный цвет */
-  background: #00f7a5;
-  box-shadow: 0 4px 20px 3px #00f7a5;
 }
 
-/* Цветовые вариации по режиму */
-.flash-1 { background: #00f7a5; box-shadow: 0 4px 20px 3px #00f7a5; animation-name: flash-1; }
-.flash-2 { background: cyan; box-shadow: 0 4px 20px 3px cyan; animation-name: flash-2; }
-.flash-3 { background: #f70094; box-shadow: 0 4px 20px 3px #f70094; animation-name: flash-3; }
+.flash-1 .bulb { animation-name: flash-1; }
+.flash-2 .bulb { animation-name: flash-2; }
+.flash-3 .bulb { animation-name: flash-3; }
 
-/* Выключено */
-.off { background: #222 !important; box-shadow: none !important; animation: none !important; }
+.off .bulb {
+  background: #222 !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
 
 .lightrope li::before {
   content: "";
@@ -141,24 +140,28 @@ const bulbsColors = wires.map(() => {
   left: 2px;
   width: 10px;
   height: 10px;
-  background: #222;
+  background: var(--ui-border-muted);
   border-radius: 3px;
 }
 
 .lightrope li::after {
   content: "";
   position: absolute;
-  top: -18px;
-  left: 12px;
-  width: 44px;
+  top: -20px;
+  left: 13px;
+  width: 50px;
   height: 16px;
-  border-bottom: 2px solid #222;
+  border-bottom: 2px solid var(--ui-border-muted);
   border-radius: 50%;
+  pointer-events: none;
+  filter: none;
+  opacity: 1 !important;
 }
+
 .lightrope li:last-child::after { content: none; }
 
+/* Анимации моргания ламп */
 @keyframes flash-1 { 0%, 100% { opacity: 1; filter: brightness(1); } 50% { opacity: 0.3; filter: brightness(2.5); } }
 @keyframes flash-2 { 0%, 100% { opacity: 1; filter: brightness(1); } 50% { opacity: 0.4; filter: brightness(2); } }
 @keyframes flash-3 { 0%, 100% { opacity: 1; filter: brightness(1); } 50% { opacity: 0.3; filter: brightness(1.8); } }
-
 </style>
