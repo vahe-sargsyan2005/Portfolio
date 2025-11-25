@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const { global, footer } = useAppConfig()
 const img = useImage()
-const age = useAge()
 </script>
 
 <template>
@@ -11,7 +10,7 @@ const age = useAge()
         {{ $t('about.title') }}
       </h1>
       <p class="text-muted text-base">
-        {{ $t('about.intro', { age }) }}
+        {{ $t('about.intro') }}
       </p>
       <div class="mt-2 flex gap-2">
         <UButton

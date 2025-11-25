@@ -7,7 +7,6 @@ definePageMeta({ layout: 'resume' })
 const { global } = useAppConfig()
 const { t, locale } = useI18n()
 const img = useImage()
-const age = useAge()
 const isAvailable = global.available
 const { experienceString } = useExperienceString()
 
@@ -71,7 +70,7 @@ const combinedTechs = computed(() => [...(techs.value?.frontend || []), ...(tech
           </div>
         </div>
 
-        <p class="text-neutral-700 text-sm line-clamp-4">{{ $t('about.intro', { age }) }}</p>
+        <p class="text-neutral-700 text-sm line-clamp-4">{{ $t('about.intro') }}</p>
       </div>
 
       <div class="w-1/3 bg-neutral-200 p-3 rounded-3xl flex flex-col justify-between">

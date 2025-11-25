@@ -2,6 +2,7 @@
   "name": "vahe-portfolio",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.20.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

@@ -48,7 +48,7 @@
   "about": {
     "title": "About Me",
     "description": "About me as a developer",
-    "intro": "My name is Vahe, I am {age} years old. Full-stack developer specializing in Nuxt.js and Laravel. I create fast and convenient web apps, worked with microservices, APIs (REST & GraphQL), system integrations, and complex UI. I value reliability, clean code, and projects that bring real value."
+    "intro": "My name is Vahe, Full-stack developer specializing in Nuxt.js and Laravel. I create fast and convenient web apps, worked with microservices, APIs (REST & GraphQL), system integrations, and complex UI. I value reliability, clean code, and projects that bring real value."
   },
   "projects": {
     "title": "What I Build and Develop",
